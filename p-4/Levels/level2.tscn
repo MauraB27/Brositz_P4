@@ -10,6 +10,8 @@
 [ext_resource type="Script" uid="uid://b0solgqa6wr16" path="res://path_follow_2d.gd" id="8_lr0ko"]
 [ext_resource type="Script" uid="uid://cvk5umh0lj5ce" path="res://saw.gd" id="9_tdxkx"]
 [ext_resource type="Texture2D" uid="uid://gq8mnq8nrq51" path="res://character sprites/Screenshot 2026-10-14 143040.png" id="10_1c22n"]
+[ext_resource type="Texture2D" uid="uid://m0ujebq7unvc" path="res://character sprites/Screenshot 2026-10-14 095545.png" id="11_1c22n"]
+[ext_resource type="Texture2D" uid="uid://702lyuqxc3jo" path="res://character sprites/Screenshot 2026-10-14 111024.png" id="11_tdxkx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xv7eh"]
 texture = ExtResource("4_dj5hn")
@@ -3166,6 +3168,12 @@ radius = 9.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_ppd48"]
 radius = 13.0
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_1c22n"]
+radius = 9.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bl3jk"]
+radius = 9.0
+
 [sub_resource type="Curve2D" id="Curve2D_bl3jk"]
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -1287.1672, 1820.4773, 0, 0, 0, 0, -1253.5767, 1818.5505, 0, 0, 0, 0, -1218.4594, 1820.4773, 0, 0, 0, 0, -1160.4395, 1818.5505, 0, 0, 0, 0, -1120.7416, 1820.4773, 0, 0, 0, 0, -1056.6143, 1818.5505, 0, 0, 0, 0, -1007.7554, 1818.5505, 0, 0, 0, 0, -1287.1672, 1820.4773)
@@ -3174,6 +3182,15 @@ point_count = 8
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_65ryg"]
 radius = 15.441098
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4m3ey"]
+radius = 13.038404
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lylsv"]
+radius = 13.038404
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ppd48"]
+size = Vector2(43, 38.0625)
 
 [node name="Level2" type="Node2D" unique_id=396191430]
 
@@ -3250,6 +3267,36 @@ position = Vector2(-9.536743e-07, 53)
 scale = Vector2(0.37096775, 0.27192983)
 texture = ExtResource("7_xv7eh")
 
+[node name="mazeKeyC" type="Area2D" parent="." unique_id=874864795]
+position = Vector2(632, 2613)
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("6_ojro4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="mazeKeyC" unique_id=50365511]
+position = Vector2(-1, 1)
+shape = SubResource("CircleShape2D_1c22n")
+
+[node name="Sprite2D" type="Sprite2D" parent="mazeKeyC" unique_id=1468361288]
+position = Vector2(-2.169609e-05, 1.0000324)
+scale = Vector2(0.33064574, 0.27631474)
+texture = ExtResource("7_xv7eh")
+
+[node name="mazeKeyD" type="Area2D" parent="." unique_id=1892471250]
+position = Vector2(854, 2216)
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("6_ojro4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="mazeKeyD" unique_id=1307320255]
+position = Vector2(9, 55)
+shape = SubResource("CircleShape2D_bl3jk")
+
+[node name="Sprite2D" type="Sprite2D" parent="mazeKeyD" unique_id=147610609]
+position = Vector2(10.000024, 55.000008)
+scale = Vector2(0.28226048, 0.20614065)
+texture = ExtResource("7_xv7eh")
+
 [node name="Path2D" type="Path2D" parent="." unique_id=1171215601]
 position = Vector2(949.0267, -1843.7477)
 scale = Vector2(0.6549473, 0.66067713)
@@ -3269,7 +3316,7 @@ collision_mask = 2
 script = ExtResource("9_tdxkx")
 
 [node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D/Area2D" unique_id=181605447]
-rotation = 2.6179938
+rotation = 0.04563737
 scale = Vector2(0.25770319, 0.23077624)
 texture = ExtResource("10_1c22n")
 
@@ -3279,6 +3326,46 @@ rotation = -1.1387726
 scale = Vector2(0.9999989, 0.99999917)
 shape = SubResource("CircleShape2D_65ryg")
 
+[node name="Rock" type="RigidBody2D" parent="." unique_id=646725001]
+position = Vector2(810, 2209)
+mass = 2.952
+
+[node name="Sprite2D" type="Sprite2D" parent="Rock" unique_id=216948039]
+position = Vector2(-3.0000257, 3.9999533)
+scale = Vector2(0.4749999, 0.49999908)
+texture = ExtResource("11_1c22n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rock" unique_id=1421238207]
+position = Vector2(-3, 4)
+shape = SubResource("CircleShape2D_4m3ey")
+
+[node name="Rock2" type="RigidBody2D" parent="." unique_id=1429975259]
+position = Vector2(810, 2209)
+mass = 2.952
+
+[node name="Sprite2D" type="Sprite2D" parent="Rock2" unique_id=638033099]
+position = Vector2(-230.00006, 405.99994)
+scale = Vector2(0.4749999, 0.49999908)
+texture = ExtResource("11_1c22n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rock2" unique_id=1426781962]
+position = Vector2(-230, 406)
+shape = SubResource("CircleShape2D_lylsv")
+
+[node name="Door2" type="StaticBody2D" parent="." unique_id=1175647707]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door2" unique_id=415713929]
+position = Vector2(653, 2086.0313)
+shape = SubResource("RectangleShape2D_ppd48")
+
+[node name="Sprite2D" type="Sprite2D" parent="Door2" unique_id=25247735]
+position = Vector2(652, 2087.9023)
+scale = Vector2(0.20382172, 0.21920232)
+texture = ExtResource("11_tdxkx")
+
 [connection signal="body_entered" from="mazeKeyA" to="mazeKeyA" method="_on_body_entered"]
 [connection signal="body_entered" from="mazeKeyB" to="mazeKeyB" method="_on_body_entered"]
+[connection signal="body_entered" from="mazeKeyC" to="mazeKeyC" method="_on_body_entered"]
+[connection signal="body_entered" from="mazeKeyD" to="mazeKeyD" method="_on_body_entered"]
 [connection signal="body_entered" from="Path2D/PathFollow2D/Area2D" to="Path2D/PathFollow2D/Area2D" method="_on_body_entered"]
