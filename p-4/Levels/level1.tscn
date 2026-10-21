@@ -6,7 +6,6 @@
 [ext_resource type="Script" uid="uid://dmqbr3gr8sjm0" path="res://spikes.gd" id="4_1ej3e"]
 [ext_resource type="Texture2D" uid="uid://c841uvdo0o5te" path="res://character sprites/sprite-buff-processed-image.png" id="5_xsckx"]
 [ext_resource type="Script" uid="uid://cy5hoawmkrwq3" path="res://trigger_zone.gd" id="6_20vxw"]
-[ext_resource type="Script" uid="uid://db5mxljethkah" path="res://trigger_zone_2.gd" id="7_uikxm"]
 [ext_resource type="Texture2D" uid="uid://bvy1arkbactvj" path="res://character sprites/Screenshot 2026-10-14 095835.png" id="8_26wun"]
 [ext_resource type="Texture2D" uid="uid://dgpurqbqsa7yx" path="res://SNES - Harvest Moon - Backgrounds - Tool Shop.png" id="10_41rou"]
 [ext_resource type="Texture2D" uid="uid://bha47vci18lw6" path="res://32x32_map_tile v3.1.png" id="11_2oha0"]
@@ -16,6 +15,9 @@
 [ext_resource type="Script" uid="uid://ceidtne4oq5jp" path="res://portal.gd" id="16_lxuwh"]
 [ext_resource type="Texture2D" uid="uid://c55igu74ayolo" path="res://portal.png" id="17_xcka5"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_bc84e"]
+font_size = 8
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fyly4"]
 size = Vector2(27, 24)
 
@@ -23,9 +25,6 @@ size = Vector2(27, 24)
 size = Vector2(24, 22)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vetgx"]
-size = Vector2(41.5, 42.75)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_70uel"]
 size = Vector2(41.5, 42.75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aqk2v"]
@@ -3183,10 +3182,21 @@ radius = 9.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e3ehj"]
 size = Vector2(59, 60.5)
 
-[sub_resource type="LabelSettings" id="LabelSettings_bc84e"]
-font_size = 8
-
 [node name="World" type="Node2D" unique_id=1814670489]
+
+[node name="Label" type="Label" parent="." unique_id=958886227]
+custom_minimum_size = Vector2(1, 1)
+offset_left = -59.0
+offset_top = -44.0
+offset_right = 106.0
+offset_bottom = 28.0
+text = "Controls: WASD or arrow keys
+LEVEL 1: collect the keys and make it to the portal
+LEVEL 2: find and collect all 4 keys to get to the shop"
+label_settings = SubResource("LabelSettings_bc84e")
+horizontal_alignment = 1
+autowrap_mode = 2
+visible_characters_behavior = 1
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="." unique_id=1290993175]
 stream = ExtResource("1_eaymk")
@@ -3314,16 +3324,6 @@ script = ExtResource("6_20vxw")
 position = Vector2(-49, -15)
 shape = SubResource("RectangleShape2D_vetgx")
 
-[node name="Trigger Zone2" type="Area2D" parent="." unique_id=1121737045]
-position = Vector2(690, 2107)
-collision_layer = 4
-collision_mask = 2
-script = ExtResource("7_uikxm")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Trigger Zone2" unique_id=136560711]
-position = Vector2(-38, -20)
-shape = SubResource("RectangleShape2D_70uel")
-
 [node name="Door" type="StaticBody2D" parent="." unique_id=42547969]
 collision_mask = 2
 
@@ -3371,12 +3371,11 @@ position = Vector2(-1.66893e-06, -0.99999833)
 scale = Vector2(0.30555567, 0.27884614)
 texture = ExtResource("14_kxl7g")
 
-[node name="Portal" type="Area2D" parent="." unique_id=2087254894 node_paths=PackedStringArray("marker")]
+[node name="Portal" type="Area2D" parent="." unique_id=2087254894]
 position = Vector2(651, -153)
 collision_layer = 4
 collision_mask = 2
 script = ExtResource("16_lxuwh")
-marker = NodePath("")
 
 [node name="Sprite2D" type="Sprite2D" parent="Portal" unique_id=999740052]
 position = Vector2(6.034878, 13.000003)
@@ -3384,22 +3383,8 @@ scale = Vector2(0.5049545, 0.38271612)
 texture = ExtResource("17_xcka5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal" unique_id=769900286]
-position = Vector2(6, 13)
+position = Vector2(3, 14)
 shape = SubResource("RectangleShape2D_e3ehj")
-
-[node name="Label" type="Label" parent="." unique_id=958886227]
-custom_minimum_size = Vector2(1, 1)
-offset_left = -59.0
-offset_top = -44.0
-offset_right = 106.0
-offset_bottom = 13.0
-text = "Controls: WASD or arrow keys
-LEVEL 1: collect the keys and make it to the portal
-LEVEL 2: find and collect all 4 keys to get to the shop"
-label_settings = SubResource("LabelSettings_bc84e")
-horizontal_alignment = 1
-autowrap_mode = 2
-visible_characters_behavior = 1
 
 [connection signal="body_entered" from="Spikes" to="Spikes" method="_on_body_entered"]
 [connection signal="body_entered" from="Spikes2" to="Spikes2" method="_on_body_entered"]
@@ -3407,7 +3392,6 @@ visible_characters_behavior = 1
 [connection signal="body_entered" from="Spikes4" to="Spikes4" method="_on_body_entered"]
 [connection signal="body_entered" from="Spikes5" to="Spikes5" method="_on_body_entered"]
 [connection signal="body_entered" from="Trigger Zone" to="Trigger Zone" method="_on_body_entered"]
-[connection signal="body_entered" from="Trigger Zone2" to="Trigger Zone2" method="_on_body_entered"]
 [connection signal="body_entered" from="blueKey" to="blueKey" method="_on_body_entered"]
 [connection signal="body_entered" from="redKey" to="redKey" method="_on_body_entered"]
 [connection signal="body_entered" from="Portal" to="Portal" method="_on_body_entered"]

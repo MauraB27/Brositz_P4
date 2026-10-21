@@ -416,6 +416,14 @@ sources/0 = SubResource("TileSetAtlasSource_eh6o7")
 
 [node name="Level3" type="Node2D" unique_id=1365011763]
 
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1577954249]
+z_index = -2
+offset_left = -3999.0
+offset_top = -3303.0
+offset_right = 4764.0
+offset_bottom = 3716.0
+color = Color(0.027913298, 0.53, 0.010599989, 0.7882353)
+
 [node name="Player" type="CharacterBody2D" parent="." unique_id=1675782975 groups=["player"]]
 collision_layer = 2
 collision_mask = 5
@@ -443,14 +451,6 @@ volume_db = 0.272
 pitch_scale = 1.01
 autoplay = true
 parameters/looping = true
-
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1577954249]
-z_index = -2
-offset_left = -3999.0
-offset_top = -3303.0
-offset_right = 4764.0
-offset_bottom = 3716.0
-color = Color(0.027913298, 0.53, 0.010599989, 0.7882353)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=148508813]
 z_index = -1
