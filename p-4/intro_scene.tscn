@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://dh84i68mbluov"]
+
+[ext_resource type="Script" uid="uid://bcfywn4brgtsh" path="res://main_menu_button.gd" id="1_fqpck"]
+
+[node name="IntroScene" type="Control" unique_id=1510634010]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="." unique_id=947077732]
+layout_mode = 0
+offset_left = 541.0
+offset_top = 405.0
+offset_right = 666.0
+offset_bottom = 447.0
+text = "Press Play!"
+script = ExtResource("1_fqpck")
+
+[node name="Label" type="Label" parent="." unique_id=1931280225]
+layout_mode = 0
+offset_left = 459.0
+offset_top = 56.0
+offset_right = 697.0
+offset_bottom = 100.0
+text = "Welcome to Bread Brainstorm!
+
+Story: You are a little lost piece of bread
+stuck in the forest"
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
