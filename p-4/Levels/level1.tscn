@@ -19,10 +19,10 @@
 font_size = 8
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fyly4"]
-size = Vector2(27, 24)
+size = Vector2(24, 21)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rlql0"]
-size = Vector2(24, 22)
+size = Vector2(23, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vetgx"]
 size = Vector2(41.5, 42.75)
@@ -3231,7 +3231,7 @@ region_enabled = true
 region_rect = Rect2(15.688889, 525.68756, 19.844467, 20.969116)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1641285496]
-position = Vector2(-1, 37)
+position = Vector2(0, 37.5)
 shape = SubResource("RectangleShape2D_fyly4")
 
 [node name="Spikes" type="Area2D" parent="." unique_id=320710870]
@@ -3263,7 +3263,7 @@ region_enabled = true
 region_rect = Rect2(146, 6, 35, 33)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Spikes2" unique_id=2003580474]
-position = Vector2(-121, 262)
+position = Vector2(-120.5, 261)
 shape = SubResource("RectangleShape2D_rlql0")
 
 [node name="Spikes3" type="Area2D" parent="." unique_id=412490386]

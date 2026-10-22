@@ -3195,19 +3195,19 @@ radius = 13.038404
 size = Vector2(43, 43.03125)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_65ryg"]
-size = Vector2(41.5, 42.75)
+size = Vector2(51.75, 57.375)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fyly4"]
-size = Vector2(100.90062, 37.72815)
+size = Vector2(72.56504, 41.408752)
 
 [node name="Level2" type="Node2D" unique_id=396191430]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1420904965]
 z_index = -2
-offset_left = -4867.9995
-offset_top = -3308.0
-offset_right = 3895.0005
-offset_bottom = 3711.0
+offset_left = -4778.0
+offset_top = -3188.0002
+offset_right = 3985.0
+offset_bottom = 3830.9998
 scale = Vector2(0.99221295, 0.94786835)
 pivot_offset = Vector2(4920.0767, 3345.8965)
 color = Color(0.027913298, 0.53, 0.010599989, 0.7882353)
@@ -3375,22 +3375,24 @@ scale = Vector2(0.20382172, 0.21920232)
 texture = ExtResource("11_tdxkx")
 
 [node name="Trigger Zone2" type="Area2D" parent="." unique_id=265512577]
-position = Vector2(690, 2107)
+position = Vector2(160, -966)
 collision_layer = 4
 collision_mask = 2
 script = ExtResource("13_bl3jk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trigger Zone2" unique_id=1410710747]
-position = Vector2(-38, -20)
+position = Vector2(-23.875, -78.6875)
 shape = SubResource("RectangleShape2D_65ryg")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=965536179]
-position = Vector2(-5030, -3316.0002)
+[node name="Door_to_Scene3" type="Area2D" parent="." unique_id=965536179]
+position = Vector2(83, 9)
 scale = Vector2(0.99221295, 0.94786835)
+collision_layer = 4
+collision_mask = 2
 script = ExtResource("13_ppd48")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2140855141]
-position = Vector2(5215.556, 2273.523)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door_to_Scene3" unique_id=2140855141]
+position = Vector2(8.062785, 26.374973)
 shape = SubResource("RectangleShape2D_fyly4")
 
 [connection signal="body_entered" from="mazeKeyA" to="mazeKeyA" method="_on_body_entered"]
@@ -3399,4 +3401,4 @@ shape = SubResource("RectangleShape2D_fyly4")
 [connection signal="body_entered" from="mazeKeyD" to="mazeKeyD" method="_on_body_entered"]
 [connection signal="body_entered" from="Path2D/PathFollow2D/Area2D" to="Path2D/PathFollow2D/Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="Trigger Zone2" to="Trigger Zone2" method="_on_body_entered"]
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="Door_to_Scene3" to="Door_to_Scene3" method="_on_body_entered"]
