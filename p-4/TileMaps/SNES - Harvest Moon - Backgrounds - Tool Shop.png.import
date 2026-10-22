@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhyocpieiti36"
-path="res://.godot/imported/Screenshot 2026-10-14 115504.png-9fa1d10c0cf17342b0e933f32bfff036.ctex"
+uid="uid://dgpurqbqsa7yx"
+path="res://.godot/imported/SNES - Harvest Moon - Backgrounds - Tool Shop.png-c45c9d539392de2c27a73bfcd49cdbbc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character sprites/Screenshot 2026-10-14 115504.png"
-dest_files=["res://.godot/imported/Screenshot 2026-10-14 115504.png-9fa1d10c0cf17342b0e933f32bfff036.ctex"]
+source_file="res://TileMaps/SNES - Harvest Moon - Backgrounds - Tool Shop.png"
+dest_files=["res://.godot/imported/SNES - Harvest Moon - Backgrounds - Tool Shop.png-c45c9d539392de2c27a73bfcd49cdbbc.ctex"]
 
 [params]
 

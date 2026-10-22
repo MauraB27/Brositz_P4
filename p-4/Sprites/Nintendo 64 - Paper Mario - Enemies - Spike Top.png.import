@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://m0ujebq7unvc"
-path="res://.godot/imported/Screenshot 2026-10-14 095545.png-43043d99e244f43816e88cc6b1a63551.ctex"
+uid="uid://corf1m38rjxb"
+path="res://.godot/imported/Nintendo 64 - Paper Mario - Enemies - Spike Top.png-b383ace360e6d306f6046a458c49a8a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character sprites/Screenshot 2026-10-14 095545.png"
-dest_files=["res://.godot/imported/Screenshot 2026-10-14 095545.png-43043d99e244f43816e88cc6b1a63551.ctex"]
+source_file="res://Sprites/Nintendo 64 - Paper Mario - Enemies - Spike Top.png"
+dest_files=["res://.godot/imported/Nintendo 64 - Paper Mario - Enemies - Spike Top.png-b383ace360e6d306f6046a458c49a8a6.ctex"]
 
 [params]
 

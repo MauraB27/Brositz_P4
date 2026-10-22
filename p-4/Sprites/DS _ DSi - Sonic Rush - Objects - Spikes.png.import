@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gq8mnq8nrq51"
-path="res://.godot/imported/Screenshot 2026-10-14 143040.png-7e9363ca812770ef97e921c8a7097401.ctex"
+uid="uid://cmfq57fyk8nt4"
+path="res://.godot/imported/DS _ DSi - Sonic Rush - Objects - Spikes.png-6f670fd51e81c499df055b9fa7d98967.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character sprites/Screenshot 2026-10-14 143040.png"
-dest_files=["res://.godot/imported/Screenshot 2026-10-14 143040.png-7e9363ca812770ef97e921c8a7097401.ctex"]
+source_file="res://Sprites/DS _ DSi - Sonic Rush - Objects - Spikes.png"
+dest_files=["res://.godot/imported/DS _ DSi - Sonic Rush - Objects - Spikes.png-6f670fd51e81c499df055b9fa7d98967.ctex"]
 
 [params]
 

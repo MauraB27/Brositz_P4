@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmfq57fyk8nt4"
-path="res://.godot/imported/DS _ DSi - Sonic Rush - Objects - Spikes.png-f95f7a9f3c14d403148001cb79ada5a7.ctex"
+uid="uid://onlasw0wv7w0"
+path="res://.godot/imported/PC _ Computer - Bread Adventure - Playable Characters - Bread (1).png-1c420160b5507dd8c37a5b75cceb0e9a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character sprites/DS _ DSi - Sonic Rush - Objects - Spikes.png"
-dest_files=["res://.godot/imported/DS _ DSi - Sonic Rush - Objects - Spikes.png-f95f7a9f3c14d403148001cb79ada5a7.ctex"]
+source_file="res://Sprites/PC _ Computer - Bread Adventure - Playable Characters - Bread (1).png"
+dest_files=["res://.godot/imported/PC _ Computer - Bread Adventure - Playable Characters - Bread (1).png-1c420160b5507dd8c37a5b75cceb0e9a.ctex"]
 
 [params]
 

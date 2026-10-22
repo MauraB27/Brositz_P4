@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://onlasw0wv7w0"
-path="res://.godot/imported/PC _ Computer - Bread Adventure - Playable Characters - Bread (1).png-3f82255f16340dbb1615e7e8ea588fe0.ctex"
+uid="uid://c55igu74ayolo"
+path="res://.godot/imported/portal.png-3e455010f0ef4381bac1d36f2bdd4fba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://character sprites/PC _ Computer - Bread Adventure - Playable Characters - Bread (1).png"
-dest_files=["res://.godot/imported/PC _ Computer - Bread Adventure - Playable Characters - Bread (1).png-3f82255f16340dbb1615e7e8ea588fe0.ctex"]
+source_file="res://Sprites/portal.png"
+dest_files=["res://.godot/imported/portal.png-3e455010f0ef4381bac1d36f2bdd4fba.ctex"]
 
 [params]
 
