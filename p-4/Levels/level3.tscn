@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dgpurqbqsa7yx" path="res://TileMaps/SNES - Harvest Moon - Backgrounds - Tool Shop.png" id="4_eex2w"]
 [ext_resource type="Script" uid="uid://ov8g6r6dfofp" path="res://key.gd" id="5_eex2w"]
 [ext_resource type="Texture2D" uid="uid://c2pq8va6o7vja" path="res://Sprites/sprite_nobg.png" id="6_eex2w"]
+[ext_resource type="Script" uid="uid://d1rfpdso03jyh" path="res://Levels/level_2_inst.gd" id="7_ltsrt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eh6o7"]
 resource_name = "shop"
@@ -607,6 +608,13 @@ size = Vector2(27, 24)
 [sub_resource type="CircleShape2D" id="CircleShape2D_2jaon"]
 radius = 14.142136
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2jaon"]
+size = Vector2(51.361, 54.58495)
+
+[sub_resource type="LabelSettings" id="LabelSettings_2cw1i"]
+font_size = 30
+font_color = Color(0.9722362, 0, 0, 1)
+
 [node name="Level3" type="Node2D" unique_id=1365011763]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=148508813]
@@ -667,4 +675,37 @@ texture = ExtResource("6_eex2w")
 region_enabled = true
 region_rect = Rect2(25, 24.799995, 14, 14.200005)
 
+[node name="ShopOwner" type="Area2D" parent="." unique_id=1412626931]
+position = Vector2(83, 9)
+scale = Vector2(0.99221295, 0.94786835)
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("7_ltsrt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ShopOwner" unique_id=27784603]
+position = Vector2(-184.9205, -49.447456)
+shape = SubResource("RectangleShape2D_2jaon")
+
+[node name="Sprite2D" type="Sprite2D" parent="ShopOwner" unique_id=1785171186]
+position = Vector2(-195.52254, -62.24493)
+scale = Vector2(1.3188767, 1.4143323)
+texture = ExtResource("2_c5oim")
+region_enabled = true
+region_rect = Rect2(10, 604, 16, 15)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="ShopOwner" unique_id=1923223101]
+layer = 2
+
+[node name="Label" type="Label" parent="ShopOwner/CanvasLayer" unique_id=687996848]
+visible = false
+offset_left = 1.0
+offset_top = 85.000015
+offset_right = 82.0
+offset_bottom = 114.000015
+text = "Help me find all the 
+sesame seads!"
+label_settings = SubResource("LabelSettings_2cw1i")
+
 [connection signal="body_entered" from="sesame1" to="sesame1" method="_on_body_entered"]
+[connection signal="body_entered" from="ShopOwner" to="ShopOwner" method="_on_body_entered"]
+[connection signal="body_exited" from="ShopOwner" to="ShopOwner" method="_on_body_exited"]
