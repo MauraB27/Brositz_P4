@@ -21,13 +21,17 @@ script = ExtResource("1_fqpck")
 
 [node name="Label" type="Label" parent="." unique_id=1931280225]
 layout_mode = 0
-offset_left = 459.0
-offset_top = 56.0
-offset_right = 697.0
-offset_bottom = 100.0
+offset_left = 369.0
+offset_top = 90.0
+offset_right = 881.0
+offset_bottom = 295.0
 text = "Welcome to Bread Brainstorm!
 
 Story: You are a little lost piece of bread
-stuck in the forest"
+stuck in the forest. You do not know how you 
+got there, but you must find your way home by dodging enemeies 
+and collecting objects in order to get out and get home.
+
+Controls: WASD or arrow keys allow you to move."
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
