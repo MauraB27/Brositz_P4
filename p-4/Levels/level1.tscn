@@ -10,11 +10,10 @@
 [ext_resource type="Texture2D" uid="uid://bvy1arkbactvj" path="res://Sprites/Screenshot 2026-10-14 095835.png" id="8_26wun"]
 [ext_resource type="Texture2D" uid="uid://dgpurqbqsa7yx" path="res://TileMaps/SNES - Harvest Moon - Backgrounds - Tool Shop.png" id="10_41rou"]
 [ext_resource type="Texture2D" uid="uid://bha47vci18lw6" path="res://TileMaps/32x32_map_tile v3.1.png" id="11_2oha0"]
+[ext_resource type="Texture2D" uid="uid://bdrcbq03wmaa3" path="res://Sprites/f13.png" id="12_20gr8"]
 [ext_resource type="Script" uid="uid://ov8g6r6dfofp" path="res://key.gd" id="12_y525r"]
-[ext_resource type="Texture2D" uid="uid://bhyocpieiti36" path="res://Sprites/Screenshot 2026-10-14 115504.png" id="13_mf6oh"]
-[ext_resource type="Texture2D" uid="uid://c4mxwpuyak3gp" path="res://Sprites/Screenshot 2026-10-14 115528.png" id="14_kxl7g"]
+[ext_resource type="Texture2D" uid="uid://c8rwy1yymjaoj" path="res://Sprites/PC _ Computer - Geometry Dash - Game Objects - Portals.png" id="14_20gr8"]
 [ext_resource type="Script" uid="uid://ceidtne4oq5jp" path="res://portal.gd" id="16_lxuwh"]
-[ext_resource type="Texture2D" uid="uid://c55igu74ayolo" path="res://Sprites/portal.png" id="17_xcka5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eaymk"]
 texture = ExtResource("10_41rou")
@@ -6073,9 +6072,9 @@ position = Vector2(-2, 0)
 shape = SubResource("CircleShape2D_fyly4")
 
 [node name="Sprite2D" type="Sprite2D" parent="blueKey" unique_id=2144648575]
-position = Vector2(-2, -2.0861626e-07)
-scale = Vector2(0.28125003, 0.24122809)
-texture = ExtResource("13_mf6oh")
+position = Vector2(-2.0000033, 4.7683716e-07)
+scale = Vector2(0.8906255, 0.87061393)
+texture = ExtResource("12_20gr8")
 
 [node name="redKey" type="Area2D" parent="." unique_id=1391162868]
 position = Vector2(93, 42)
@@ -6088,9 +6087,9 @@ position = Vector2(0, -1)
 shape = SubResource("CircleShape2D_fyly4")
 
 [node name="Sprite2D" type="Sprite2D" parent="redKey" unique_id=218358710]
-position = Vector2(-1.66893e-06, -0.99999833)
-scale = Vector2(0.30555567, 0.27884614)
-texture = ExtResource("14_kxl7g")
+position = Vector2(2.1457672e-06, -1.0000006)
+scale = Vector2(0.857639, 0.85096127)
+texture = ExtResource("12_20gr8")
 
 [node name="Portal" type="Area2D" parent="." unique_id=2087254894]
 position = Vector2(651, -153)
@@ -6099,9 +6098,11 @@ collision_mask = 2
 script = ExtResource("16_lxuwh")
 
 [node name="Sprite2D" type="Sprite2D" parent="Portal" unique_id=999740052]
-position = Vector2(6.034878, 13.000003)
-scale = Vector2(0.5049545, 0.38271612)
-texture = ExtResource("17_xcka5")
+position = Vector2(-1.1444092e-05, 11.999996)
+scale = Vector2(0.2622541, 0.15802473)
+texture = ExtResource("14_20gr8")
+region_enabled = true
+region_rect = Rect2(2142, 1150, 201, 360)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal" unique_id=769900286]
 position = Vector2(3, 14)
