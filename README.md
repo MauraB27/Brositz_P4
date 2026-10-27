@@ -17,7 +17,7 @@ Story | Develop the story - escape the forest to get home| Medium     |In Progre
 Player Experience | Develop the 3rd Level                | Very High  |In Progress|\
 ------------------------------------------------------------------------------------\
 Player Experience | Work on Title/Intro Scene            | Medium     |In Progress|\
-------------------------------------------------------------------------------------\
+------------------------------------------------------------------------------------
 
 
 
