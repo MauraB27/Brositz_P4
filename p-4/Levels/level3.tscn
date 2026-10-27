@@ -609,7 +609,7 @@ sources/0 = SubResource("TileSetAtlasSource_eh6o7")
 size = Vector2(27, 24)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2jaon"]
-radius = 14.142136
+radius = 9.7451105
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2jaon"]
 size = Vector2(51.361, 54.58495)
@@ -620,9 +620,9 @@ font_color = Color(0.9722362, 0, 0, 1)
 
 [sub_resource type="Curve2D" id="Curve2D_31k36"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, -1314.6505, 1818.9637, 0, 0, 0, 0, -1253.5767, 1818.5505, 0, 0, 0, 0, -1218.4594, 1820.4773, 0, 0, 0, 0, -1160.4395, 1818.5505, 0, 0, 0, 0, -1120.7416, 1820.4773, 0, 0, 0, 0, -1056.6143, 1818.5505, 0, 0, 0, 0, -980.2724, 1820.4773, 0, 0, 0, 0, -1287.1672, 1820.4773)
+"points": PackedVector2Array(0, 0, 0, 0, -1301.6782, 1822.8174, 0, 0, 0, 0, -1253.5767, 1818.5505, 0, 0, 0, 0, -1295.22, 1823.9319, 0, 0, 0, 0, -1193.5962, 1813.6136, 0, 0, 0, 0, -1160.4395, 1818.5505, 0, 0, 0, 0, -1110.4622, 1829.0916, 0, 0, 0, 0, -1056.6143, 1818.5505, 0, 0, 0, 0, -1078.9965, 1844.7874, 0, 0, 0, 0, -1143.6443, 1843.1814, 0, 0, 0, 0, -1149.7097, 1842.7131, 0, 0, 0, 0, -1287.1672, 1820.4773)
 }
-point_count = 8
+point_count = 11
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qqkb1"]
 radius = 15.441098
@@ -635,14 +635,16 @@ tile_map_data = PackedByteArray("AAD3/+z/AAAAAAAAAAD3/+3/AAAAAAEAAAD3/+7/AAAAAAI
 tile_set = SubResource("TileSet_fyly4")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1577954249]
+visible = false
 z_index = -2
-offset_left = -3999.0
-offset_top = -3303.0
-offset_right = 4764.0
-offset_bottom = 3716.0
+offset_left = -3191.0
+offset_top = -2588.0
+offset_right = 5572.0
+offset_bottom = 4431.0
 color = Color(0.66142035, 0.52912915, 0.012920001, 0.333)
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=1675782975 groups=["player"]]
+position = Vector2(27, 2)
 collision_layer = 2
 collision_mask = 5
 motion_mode = 1
@@ -677,12 +679,29 @@ collision_mask = 2
 script = ExtResource("5_eex2w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="sesame1" unique_id=1961148638]
-position = Vector2(52, -73)
+position = Vector2(236, -245)
 shape = SubResource("CircleShape2D_2jaon")
 
 [node name="Sprite2D" type="Sprite2D" parent="sesame1" unique_id=1132687669]
-position = Vector2(53.000008, -76.61899)
-scale = Vector2(1.3263887, 1.2312845)
+position = Vector2(236, -245)
+scale = Vector2(0.85714257, 0.64285654)
+texture = ExtResource("6_eex2w")
+region_enabled = true
+region_rect = Rect2(25, 24.799995, 14, 14.200005)
+
+[node name="sesame2" type="Area2D" parent="." unique_id=1758836528]
+position = Vector2(93, 42)
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("5_eex2w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sesame2" unique_id=1890072908]
+position = Vector2(406, -91)
+shape = SubResource("CircleShape2D_2jaon")
+
+[node name="Sprite2D" type="Sprite2D" parent="sesame2" unique_id=319774344]
+position = Vector2(406, -92)
+scale = Vector2(0.85714257, 0.64285654)
 texture = ExtResource("6_eex2w")
 region_enabled = true
 region_rect = Rect2(25, 24.799995, 14, 14.200005)
@@ -715,42 +734,43 @@ offset_top = 85.000015
 offset_right = 82.0
 offset_bottom = 114.000015
 text = "Help me find all the 
-sesame seads!"
+sesame seeds!"
 label_settings = SubResource("LabelSettings_2cw1i")
 
 [node name="Path2D" type="Path2D" parent="." unique_id=57568210]
-position = Vector2(950.0267, -1758.7477)
+position = Vector2(1220.0267, -1440.7477)
 scale = Vector2(0.6549473, 0.66067713)
 curve = SubResource("Curve2D_31k36")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=675633609]
-position = Vector2(-1280.9244, 1818.7357)
-rotation = -0.0067656073
+position = Vector2(-1268.0625, 1819.8354)
+rotation = -0.08847336
 progress = 33.725536
 script = ExtResource("8_0ywmm")
 
-[node name="Area2D" type="Area2D" parent="Path2D/PathFollow2D" unique_id=1128151491]
+[node name="Mouse1" type="Area2D" parent="Path2D/PathFollow2D" unique_id=1128151491]
 light_mask = 8
 visibility_layer = 2
 collision_layer = 8
 collision_mask = 2
 script = ExtResource("9_k0lmg")
 
-[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D/Area2D" unique_id=1661555461]
-position = Vector2(40.98629, 40.705032)
+[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D/Mouse1" unique_id=1661555461]
+position = Vector2(-3.2111301, 3.2335567)
 rotation = 0.04563737
-scale = Vector2(4.0407977, 3.6910503)
+scale = Vector2(2.3122401, 1.8793681)
 texture = ExtResource("10_ls4d1")
 region_enabled = true
 region_rect = Rect2(56, 97, 16, 14)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/Area2D" unique_id=960377209]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/Mouse1" unique_id=960377209]
 position = Vector2(-3.1905556, 0.20642602)
 rotation = -1.1387726
 scale = Vector2(0.9999989, 0.99999917)
 shape = SubResource("CircleShape2D_qqkb1")
 
 [connection signal="body_entered" from="sesame1" to="sesame1" method="_on_body_entered"]
+[connection signal="body_entered" from="sesame2" to="sesame2" method="_on_body_entered"]
 [connection signal="body_entered" from="ShopOwner" to="ShopOwner" method="_on_body_entered"]
 [connection signal="body_exited" from="ShopOwner" to="ShopOwner" method="_on_body_exited"]
-[connection signal="body_entered" from="Path2D/PathFollow2D/Area2D" to="Path2D/PathFollow2D/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="Path2D/PathFollow2D/Mouse1" to="Path2D/PathFollow2D/Mouse1" method="_on_body_entered"]

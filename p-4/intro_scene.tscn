@@ -1,6 +1,14 @@
 [gd_scene format=3 uid="uid://dh84i68mbluov"]
 
 [ext_resource type="Script" uid="uid://bcfywn4brgtsh" path="res://main_menu_button.gd" id="1_fqpck"]
+[ext_resource type="Texture2D" uid="uid://dt6riye45mixt" path="res://Sprites/—Pngtree—beautiful ink bamboo border_5404237.png" id="2_x3ncd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fqpck"]
+font_size = 19
+font_color = Color(0.04, 0.04, 0.04, 1)
+outline_size = 7
+shadow_size = 6
+shadow_color = Color(0, 0.5834005, 0, 0)
 
 [node name="IntroScene" type="Control" unique_id=1510634010]
 layout_mode = 3
@@ -9,22 +17,23 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_horizontal_guides_ = [-58.0]
 
 [node name="Button" type="Button" parent="." unique_id=947077732]
 layout_mode = 0
-offset_left = 541.0
-offset_top = 405.0
-offset_right = 666.0
-offset_bottom = 447.0
-text = "Press Play!"
+offset_left = 285.0
+offset_top = 414.0
+offset_right = 410.0
+offset_bottom = 456.0
+text = "Play Now!"
 script = ExtResource("1_fqpck")
 
 [node name="Label" type="Label" parent="." unique_id=1931280225]
 layout_mode = 0
-offset_left = 369.0
-offset_top = 90.0
-offset_right = 881.0
-offset_bottom = 295.0
+offset_left = 139.0
+offset_top = 63.0
+offset_right = 747.0
+offset_bottom = 300.0
 text = "Welcome to Bread Brainstorm!
 
 Story: You are a little lost piece of bread
@@ -33,5 +42,20 @@ got there, but you must find your way home by dodging enemeies
 and collecting objects in order to get out and get home.
 
 Controls: WASD or arrow keys allow you to move."
+label_settings = SubResource("LabelSettings_fqpck")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1124859773]
+z_index = -2
+layout_mode = 0
+offset_left = -5.0
+offset_top = -16.0
+offset_right = 1185.0
+offset_bottom = 645.0
+color = Color(0.08690001, 0.79, 0.34470326, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1489859052]
+position = Vector2(594.5, 322)
+scale = Vector2(0.39983073, 0.21613996)
+texture = ExtResource("2_x3ncd")
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
