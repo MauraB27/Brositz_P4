@@ -15,11 +15,16 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 41.0
+offset_top = 18.0
+offset_right = 41.0
+offset_bottom = 18.0
 grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_horizontal_guides_ = [-58.0]
 
 [node name="Button" type="Button" parent="." unique_id=947077732]
+z_index = 5
 layout_mode = 0
 offset_left = 285.0
 offset_top = 414.0
@@ -45,17 +50,18 @@ Controls: WASD or arrow keys allow you to move."
 label_settings = SubResource("LabelSettings_fqpck")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1124859773]
-z_index = -2
+z_index = -1
 layout_mode = 0
-offset_left = -5.0
-offset_top = -16.0
-offset_right = 1185.0
-offset_bottom = 645.0
+offset_left = 2.0
+offset_top = -7.0
+offset_right = 1114.0
+offset_bottom = 633.0
+mouse_filter = 2
 color = Color(0.08690001, 0.79, 0.34470326, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1489859052]
-position = Vector2(594.5, 322)
-scale = Vector2(0.39983073, 0.21613996)
+position = Vector2(555, 293.99994)
+scale = Vector2(0.39672688, 0.21613996)
 texture = ExtResource("2_x3ncd")
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

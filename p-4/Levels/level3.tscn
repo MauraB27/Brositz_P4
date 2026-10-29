@@ -625,7 +625,13 @@ _data = {
 point_count = 11
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qqkb1"]
-radius = 15.441098
+radius = 21.510729
+
+[sub_resource type="Curve2D" id="Curve2D_0ywmm"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -1167.0906, 1708.7236, 0, 0, 0, 0, -1109.7854, 1861.1375, 0, 0, 0, 0, -1076.6936, 1949.151, 0, 0, 0, 0, -1025.9822, 2009.7937, 0, 0, 0, 0, -1036.8896, 1974.597, 0, 0, 0, 0, -1051.0256, 1930.8137, 0, 0, 0, 0, -1070.8114, 1872.0038, 0, 0, 0, 0, -1083.7024, 1850.09, 0, 0, 0, 0, -1100.6292, 1817.4429, 0, 0, 0, 0, -1112.7358, 1785.2427, 0, 0, 0, 0, -1140.2006, 1699.8228)
+}
+point_count = 11
 
 [node name="Level3" type="Node2D" unique_id=1365011763]
 
@@ -769,8 +775,43 @@ rotation = -1.1387726
 scale = Vector2(0.9999989, 0.99999917)
 shape = SubResource("CircleShape2D_qqkb1")
 
+[node name="Path2D2" type="Path2D" parent="." unique_id=1190983451]
+position = Vector2(-161.99995, -888)
+rotation = -1.1938555
+scale = Vector2(0.46240568, 0.4331395)
+skew = 0.005525112
+curve = SubResource("Curve2D_0ywmm")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D2" unique_id=1697128894]
+position = Vector2(-1155.225, 1740.2827)
+rotation = 1.2111632
+progress = 33.725536
+script = ExtResource("8_0ywmm")
+
+[node name="Mouse2" type="Area2D" parent="Path2D2/PathFollow2D" unique_id=1522879329]
+light_mask = 8
+visibility_layer = 2
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("9_k0lmg")
+
+[node name="Sprite2D" type="Sprite2D" parent="Path2D2/PathFollow2D/Mouse2" unique_id=1242566655]
+position = Vector2(-6.768138, -0.01644516)
+rotation = 0.04563737
+scale = Vector2(2.774937, 2.3199883)
+texture = ExtResource("10_ls4d1")
+region_enabled = true
+region_rect = Rect2(56, 97, 16, 14)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D2/PathFollow2D/Mouse2" unique_id=420853741]
+position = Vector2(-3.1905556, 0.20642602)
+rotation = -1.1387726
+scale = Vector2(0.9999989, 0.99999917)
+shape = SubResource("CircleShape2D_qqkb1")
+
 [connection signal="body_entered" from="sesame1" to="sesame1" method="_on_body_entered"]
 [connection signal="body_entered" from="sesame2" to="sesame2" method="_on_body_entered"]
 [connection signal="body_entered" from="ShopOwner" to="ShopOwner" method="_on_body_entered"]
 [connection signal="body_exited" from="ShopOwner" to="ShopOwner" method="_on_body_exited"]
 [connection signal="body_entered" from="Path2D/PathFollow2D/Mouse1" to="Path2D/PathFollow2D/Mouse1" method="_on_body_entered"]
+[connection signal="body_entered" from="Path2D2/PathFollow2D/Mouse2" to="Path2D2/PathFollow2D/Mouse2" method="_on_body_entered"]
