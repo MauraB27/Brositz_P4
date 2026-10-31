@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://c2pq8va6o7vja" path="res://Sprites/sprite_nobg.png" id="6_eex2w"]
 [ext_resource type="Script" uid="uid://d1rfpdso03jyh" path="res://Levels/level_2_inst.gd" id="7_ltsrt"]
 [ext_resource type="Script" uid="uid://b0solgqa6wr16" path="res://path_follow_2d.gd" id="8_0ywmm"]
+[ext_resource type="Script" uid="uid://c4g2mf5sqtbic" path="res://Levels/lvl_3_exit.gd" id="8_k0lmg"]
 [ext_resource type="Script" uid="uid://cvk5umh0lj5ce" path="res://saw.gd" id="9_k0lmg"]
 [ext_resource type="Texture2D" uid="uid://bvldjg1oi1ctu" path="res://Sprites/PC _ Computer - To the Moon - Animals - Mouse.png" id="10_ls4d1"]
 
@@ -334,11 +335,8 @@ texture = ExtResource("4_eex2w")
 4:13/0 = 0
 4:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:13/0 = 0
-5:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:13/0 = 0
-6:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:13/0 = 0
-7:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:13/0 = 0
 8:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 9:13/0 = 0
@@ -366,11 +364,8 @@ texture = ExtResource("4_eex2w")
 4:14/0 = 0
 4:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:14/0 = 0
-5:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:14/0 = 0
-6:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:14/0 = 0
-7:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:14/0 = 0
 8:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 9:14/0 = 0
@@ -612,11 +607,17 @@ size = Vector2(27, 24)
 radius = 9.7451105
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2jaon"]
-size = Vector2(51.361, 54.58495)
+size = Vector2(56.662003, 59.148674)
 
 [sub_resource type="LabelSettings" id="LabelSettings_2cw1i"]
 font_size = 30
 font_color = Color(0.9722362, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fyly4"]
+size = Vector2(52.408104, 48.52996)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k0lmg"]
+size = Vector2(73.57292, 71.60243)
 
 [sub_resource type="Curve2D" id="Curve2D_31k36"]
 _data = {
@@ -720,7 +721,7 @@ collision_mask = 2
 script = ExtResource("7_ltsrt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ShopOwner" unique_id=27784603]
-position = Vector2(-184.9205, -49.447456)
+position = Vector2(-187.57101, -45.33058)
 shape = SubResource("RectangleShape2D_2jaon")
 
 [node name="Sprite2D" type="Sprite2D" parent="ShopOwner" unique_id=1785171186]
@@ -741,6 +742,38 @@ offset_right = 82.0
 offset_bottom = 114.000015
 text = "Help me find all the 
 sesame seeds!"
+label_settings = SubResource("LabelSettings_2cw1i")
+
+[node name="ExitDoor" type="StaticBody2D" parent="." unique_id=1194874712]
+position = Vector2(-33, -80)
+scale = Vector2(0.99221295, 0.94786835)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitDoor" unique_id=1324656359]
+position = Vector2(-4.0314026, -10.549988)
+shape = SubResource("RectangleShape2D_fyly4")
+
+[node name="ExitSign" type="Area2D" parent="." unique_id=1722247866]
+position = Vector2(10, -63)
+scale = Vector2(0.99221295, 0.94786835)
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("8_k0lmg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitSign" unique_id=1277946331]
+position = Vector2(-38.802155, -9.426254)
+shape = SubResource("RectangleShape2D_k0lmg")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="ExitSign" unique_id=1814573431]
+layer = 2
+
+[node name="Label" type="Label" parent="ExitSign/CanvasLayer" unique_id=1879349346]
+visible = false
+offset_left = 1.0
+offset_top = 85.000015
+offset_right = 82.0
+offset_bottom = 114.000015
+text = "THIS IS THE EXIT!
+You need to find more seeds."
 label_settings = SubResource("LabelSettings_2cw1i")
 
 [node name="Path2D" type="Path2D" parent="." unique_id=57568210]
@@ -813,5 +846,7 @@ shape = SubResource("CircleShape2D_qqkb1")
 [connection signal="body_entered" from="sesame2" to="sesame2" method="_on_body_entered"]
 [connection signal="body_entered" from="ShopOwner" to="ShopOwner" method="_on_body_entered"]
 [connection signal="body_exited" from="ShopOwner" to="ShopOwner" method="_on_body_exited"]
+[connection signal="body_entered" from="ExitSign" to="ExitSign" method="_on_body_entered"]
+[connection signal="body_exited" from="ExitSign" to="ExitSign" method="_on_body_exited"]
 [connection signal="body_entered" from="Path2D/PathFollow2D/Mouse1" to="Path2D/PathFollow2D/Mouse1" method="_on_body_entered"]
 [connection signal="body_entered" from="Path2D2/PathFollow2D/Mouse2" to="Path2D2/PathFollow2D/Mouse2" method="_on_body_entered"]
