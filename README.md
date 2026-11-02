@@ -47,7 +47,7 @@ List any minor bugs or visual glitches you plan to fix in future builds.
 Coursework Submission Links
 Presentation Slides: Link to Presentation Slides (Include the detailed personal reflection here)
 Gameplay Video: Link to YouTube / Video File
-[Game Design Document (GDD)](https://docs.google.com/document/d/1gAzMD7buan7O6yF18bWGHMhbhWacHfGwnrlbmsWlMvw/edit?usp=sharing)
+[Game Design Document (GDD)](https://docs.google.com/document/d/1gAzMD7buan7O6yF18bWGHMhbhWacHfGwnrlbmsWlMvw/edit?usp=sharing)\
 itch.io Link & password: [insert here]
 
 
