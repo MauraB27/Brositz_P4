@@ -4,8 +4,8 @@ Project 4: Bread Barnstorm
 ![Platform](https://img.shields.io/badge/Platform-PC%20/%20Web-green)
 
 Developed by:
-[Your Name]  Lead Programmer
-[Your Name]  Lead Artist
+Maura Brositz  Lead Programmer and Level Designer
+
 Short introduction of your game.
 ---
 How to Play
@@ -14,30 +14,29 @@ Play in Browser: Click here to play on itch.io
 Add basic gameplay instructions here (OPTIONAL if you don't have it in game)
 ---
 Asset Credits & Attributions
-> *List the source of all external assets you downloaded or generated with AI, along with any edits or modifications made in accordance with license terms.*
 Visual Assets:
 TileMap 1 by [] (Link to Asset)
-Used for: Background, fence, and crop animations
+Used for: Background in level one and two, gives forest aesthetics, entrance of shop 
 TileMap 2 by [] (Link to Asset)
-Used for: Buttons, panel textures, and fonts
-Bread Character by [] Link:
-Used for:
+Used for: Background in level 3, used for doors, box barriers, shop aesthtic
+Bread Character(s) by [] Link:
+Used for: main character and shop keeper
 Rocks by [] Link:
-Used for:
+Used for: "enemies" and obstacles to be pushed
 Saw Fish by [] Link:
-Used for:
+Used for: an enemy that must be dodged to obtain a key
 Mouse by [] Link:
-Used for:
+Used for: an enemy that must be dodged to obtain seeds
 Keys by [] Link:
-Used for:
+Used for: must be collected to unlock the door in levels 1 and 2
 Seeds by [] Link:
-Used for:
+Used for: must be collected to unlock the door in level 3
 Door lvl 1 by [] Link:
-Used for:
+Used for: first obstacle to teach the player how doors work
 Portal by [] Link:
-Used for:
+Used for: transports player to level 2
 Door lvl 2 by [] Link:
-Used for:
+Used for: unlocks path to level 3 (the shop)
 Audio Assets:
 [Track Title] by [Artist Name] (Link to Sound Source) — Licensed under CC BY 4.0
 ---
@@ -45,7 +44,8 @@ Known Issues
 List any minor bugs or visual glitches you plan to fix in future builds.
 ---
 Coursework Submission Links
-Presentation Slides: Link to Presentation Slides (Include the detailed personal reflection here)
+
+[Presentation Slides](https://docs.google.com/presentation/d/1MR15eUMW0PzaXbKdJxyyVDJQYEcDnNDgofc77ZT3XyQ/edit?usp=sharing)\
 Gameplay Video: Link to YouTube / Video File
 [Game Design Document (GDD)](https://docs.google.com/document/d/1gAzMD7buan7O6yF18bWGHMhbhWacHfGwnrlbmsWlMvw/edit?usp=sharing)\
 itch.io Link & password: [insert here]
@@ -57,7 +57,7 @@ Feature    |  Task                                       |  Priority  | Complete
 -----------------------------------------------------------------------------------\
 Game Juice | Add background music                        | High       | Yes       |\
 -----------------------------------------------------------------------------------\
-Story      | Add label boxes                             | High       | Yes       |\
+Story      | Add dialogue boxes                             | High       | Yes       |\
 -----------------------------------------------------------------------------------\
 Clean Up   | Clean the backgrounds behind the sprites    | Medium     | Yes       |\
 -----------------------------------------------------------------------------------\
