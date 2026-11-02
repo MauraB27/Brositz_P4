@@ -13,9 +13,9 @@ Play in Browser: Click here to play on itch.io
 
 Add basic gameplay instructions here (OPTIONAL if you don't have it in game)
 ---
-Asset Credits & Attributions
-Visual Assets:
-TileMap 1 by [] (Link to Asset)
+Asset Credits & Attributions\
+Visual Assets:\
+TileMap 1 by [] (Link to Asset)\
 Used for: Background in level one and two, gives forest aesthetics, entrance of shop 
 TileMap 2 by [] (Link to Asset)
 Used for: Background in level 3, used for doors, box barriers, shop aesthtic
