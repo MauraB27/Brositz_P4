@@ -18,24 +18,24 @@ Visual Assets:\
 TileMap 1 by [] (Link to Asset)\
 Used for: Background in level one and two, gives forest aesthetics, entrance of shop 
 TileMap 2 by [] (Link to Asset)\
-Used for: Background in level 3, used for doors, box barriers, shop aesthtic
-Bread Character(s) by [] Link:\
-Used for: main character and shop keeper
-Rocks by [] Link:\
-Used for: "enemies" and obstacles to be pushed
-Saw Fish by [] Link:\
-Used for: an enemy that must be dodged to obtain a key
-Mouse by [] Link:\
+Used for: Background in level 3, used for doors, box barriers, shop aesthtic\
+Bread Character(s) by [] Link:
+Used for: main character and shop keeper\
+Rocks by [] Link:
+Used for: "enemies" and obstacles to be pushed\
+Saw Fish by [] Link:
+Used for: an enemy that must be dodged to obtain a key\
+Mouse by [] Link:
 Used for: an enemy that must be dodged to obtain seeds
-Keys by [] Link:\
+Keys by [] Link:
 Used for: must be collected to unlock the door in levels 1 and 2
-Seeds by [] Link:\
+Seeds by [] Link:
 Used for: must be collected to unlock the door in level 3
-Door lvl 1 by [] Link:\
+Door lvl 1 by [] Link:
 Used for: first obstacle to teach the player how doors work
-Portal by [] Link:\
+Portal by [] Link:
 Used for: transports player to level 2
-Door lvl 2 by [] Link:\
+Door lvl 2 by [] Link:
 Used for: unlocks path to level 3 (the shop)
 Audio Assets:\
 [Track Title] by [Artist Name] (Link to Sound Source) — Licensed under CC BY 4.0
