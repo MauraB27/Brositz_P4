@@ -10,7 +10,7 @@ Short introduction of your game.
 ---
 How to Play\
 [Play in Browser](https://sunsett556.itch.io/bread-barnstorm)\
-password: kawaiipan26\
+password: kawaiipan26
 
 Add basic gameplay instructions here (OPTIONAL if you don't have it in game)
 ---
