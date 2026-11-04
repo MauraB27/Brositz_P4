@@ -17,10 +17,10 @@ Solve the puzzles by unlocking doors and going through mazes. Be sure to dodge t
 Asset Credits & Attributions\
 Visual Assets:
 
-TileMap 1 by [] (Link to Asset)\
+Basic map 32x32 by [Ivan Voirol] Link:(https://opengameart.org/content/basic-map-32x32-by-ivan-voirol) \
 Used for: Background in level one and two, gives forest aesthetics, entrance of shop
 
-Tool Shop by [Harvest Moon] (https://www.spriters-resource.com/snes/harvestmoon/asset/155118/) \
+Tool Shop by [Harvest Moon] Link:(https://www.spriters-resource.com/snes/harvestmoon/asset/155118/) \
 Used for: tilemap, Background in level 3, used for doors, box barriers, shop aesthetic
 
 Bread by [Bread Adventure] Link:(https://www.spriters-resource.com/pc_computer/breadadventure/asset/614829/) \
