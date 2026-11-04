@@ -6,43 +6,43 @@ Project 4: Bread Barnstorm\
 Developed by:\
 Maura Brositz: Lead Programmer and Level Designer
 
-Short introduction of your game.
+Brain Barnstorm offers players a chance to travel as a piece of bread throughout various locations such as shops and hideaways  in a forest. Players must collect items and solve puzzles in order to unlock secret doors to find their way home and out of the forest.\
 ---
 How to Play\
 [Play in Browser](https://sunsett556.itch.io/bread-barnstorm)\
 password: kawaiipan26
 
-Add basic gameplay instructions here (OPTIONAL if you don't have it in game)
+Solve the puzzles by unlocking doors and going through mazes. Controls: WASD or Arrow Keys\
 ---
 Asset Credits & Attributions\
 Visual Assets:\
 TileMap 1 by [] (Link to Asset)\
 Used for: Background in level one and two, gives forest aesthetics, entrance of shop \
-TileMap 2 by [] (Link to Asset)\
-Used for: Background in level 3, used for doors, box barriers, shop aesthtic\
+Tool Shop by [Harvest Moon] (https://www.spriters-resource.com/snes/harvestmoon/asset/155118/)\
+Used for: tilemap, Background in level 3, used for doors, box barriers, shop aesthetic\
 Bread Character(s) by [] Link:\
 Used for: main character and shop keeper\
 Rocks by [] Link:\
 Used for: "enemies" and obstacles to be pushed\
 Saw Fish by [] Link:\
 Used for: an enemy that must be dodged to obtain a key\
-Mouse by [] Link:
-Used for: an enemy that must be dodged to obtain seeds
-Keys by [] Link:
-Used for: must be collected to unlock the door in levels 1 and 2
-Seeds by [] Link:
-Used for: must be collected to unlock the door in level 3
-Door lvl 1 by [] Link:
-Used for: first obstacle to teach the player how doors work
-Portal by [] Link:
-Used for: transports player to level 2
-Door lvl 2 by [] Link:
-Used for: unlocks path to level 3 (the shop)
+Mouse by [] Link:\
+Used for: an enemy that must be dodged to obtain seeds\
+Keys by [] Link:\
+Used for: must be collected to unlock the door in levels 1 and 2\
+Seeds by [] Link:\
+Used for: must be collected to unlock the door in level 3\
+Door lvl 1 by [] Link:\
+Used for: first obstacle to teach the player how doors work\
+Portal by [] Link:\
+Used for: transports player to level 2\
+Door lvl 2 by [] Link:\
+Used for: unlocks path to level 3 (the shop)\
 Audio Assets:\
 [Track Title] by [Artist Name] (Link to Sound Source) — Licensed under CC BY 4.0
 ---
 Known Issues
-List any minor bugs or visual glitches you plan to fix in future builds.
+Some of the tile map and art styles need cleaned up to look better.
 ---
 Coursework Submission Links
 
