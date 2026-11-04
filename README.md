@@ -20,25 +20,25 @@ Visual Assets:
 TileMap 1 by [] (Link to Asset)\
 Used for: Background in level one and two, gives forest aesthetics, entrance of shop
 
-Tool Shop by [Harvest Moon] (https://www.spriters-resource.com/snes/harvestmoon/asset/155118/)
+Tool Shop by [Harvest Moon] (https://www.spriters-resource.com/snes/harvestmoon/asset/155118/) \
 Used for: tilemap, Background in level 3, used for doors, box barriers, shop aesthetic
 
-Bread Character(s) by [Bread Adventure] Link:(https://www.spriters-resource.com/pc_computer/breadadventure/asset/614829/)
+Bread by [Bread Adventure] Link:(https://www.spriters-resource.com/pc_computer/breadadventure/asset/614829/) \
 Used for: main character and shop keeper
 
-Rocks by [] Link:\
+Dumb Rock (Gray) by [Adventure Time: Hey Ice King! Why'd You Steal Our Garbage?!] Link:(https://www.spriters-resource.com/3ds/adventuretimeheyicekingwhydyoustealourgarbage/asset/64184/) \
 Used for: "enemies" and obstacles to be pushed
 
-Saw Fish by [] Link:\
+Chain-Saw Fish by [Virtual Boy Wario Land] Link:(https://www.spriters-resource.com/virtual_boy/virtualboywarioland/asset/157452/) \
 Used for: an enemy that must be dodged to obtain a key
 
-Mouse by [] Link:\
+Mouse by [To the Moon] Link:(https://www.spriters-resource.com/pc_computer/tothemoon/asset/67718/) \
 Used for: an enemy that must be dodged to obtain seeds
 
-Keys by [] Link:\
+Key by [Celeste] Link:(https://www.spriters-resource.com/pc_computer/celeste/asset/242446/) \
 Used for: must be collected to unlock the door in levels 1 and 2
 
-Seeds by [] Link:\
+Korok Seed by [The Legend of Zelda Customs] Link:(https://www.spriters-resource.com/custom_edited/thelegendofzeldacustoms/asset/199198/) \
 Used for: must be collected to unlock the door in level 3
 
 Door lvl 1 by [] Link:\
@@ -51,7 +51,7 @@ Door lvl 2 by [] Link:\
 Used for: unlocks path to level 3 (the shop)
 
 Audio Assets:\
-[Track Title] by [Artist Name] (Link to Sound Source) — Licensed under CC BY 4.0
+[Boca Gold] by [freeSFX] (https://www.freesfx.co.uk/Category/World-Music/226) — Copyright freeSFX.com
 ---
 Known Issues\
 Some of the tile map and art styles need cleaned up to look better.
