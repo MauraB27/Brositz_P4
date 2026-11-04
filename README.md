@@ -12,7 +12,7 @@ How to Play\
 [Play in Browser](https://sunsett556.itch.io/bread-barnstorm)\
 password: kawaiipan26
 
-Solve the puzzles by unlocking doors and going through mazes. Controls: WASD or Arrow Keys
+Solve the puzzles by unlocking doors and going through mazes. Be sure to dodge the enemies! Controls: WASD or Arrow Keys
 ---
 Asset Credits & Attributions\
 Visual Assets:
@@ -41,13 +41,13 @@ Used for: must be collected to unlock the door in levels 1 and 2
 Korok Seed by [The Legend of Zelda Customs] Link:(https://www.spriters-resource.com/custom_edited/thelegendofzeldacustoms/asset/199198/) \
 Used for: must be collected to unlock the door in level 3
 
-Door lvl 1 by [] Link:\
-Used for: first obstacle to teach the player how doors work
+Door by [Fancy Pants Adventure] Link:(https://www.spriters-resource.com/browser_games/fancypantsadventure/asset/68582/) \
+Used for: first obstacle in Level 1 to teach the player how doors work
 
-Portal by [] Link:\
+Portals by [Geometry Dash] Link: (https://www.spriters-resource.com/pc_computer/geometrydash/asset/214888/) \
 Used for: transports player to level 2
 
-Door lvl 2 by [] Link:\
+Scroll and Exit Doors by [I.M. Meen] Link:(https://www.spriters-resource.com/ms_dos/immeen/asset/121743/) \
 Used for: unlocks path to level 3 (the shop)
 
 Audio Assets:\
