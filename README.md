@@ -15,45 +15,45 @@ password: kawaiipan26
 Solve the puzzles by unlocking doors and going through mazes. Controls: WASD or Arrow Keys
 ---
 Asset Credits & Attributions\
-Visual Assets:\
+Visual Assets:
 
 TileMap 1 by [] (Link to Asset)\
-Used for: Background in level one and two, gives forest aesthetics, entrance of shop \
+Used for: Background in level one and two, gives forest aesthetics, entrance of shop
 
 Tool Shop by [Harvest Moon] (https://www.spriters-resource.com/snes/harvestmoon/asset/155118/)
-Used for: tilemap, Background in level 3, used for doors, box barriers, shop aesthetic\
+Used for: tilemap, Background in level 3, used for doors, box barriers, shop aesthetic
 
 Bread Character(s) by [Bread Adventure] Link:(https://www.spriters-resource.com/pc_computer/breadadventure/asset/614829/)
-Used for: main character and shop keeper\
+Used for: main character and shop keeper
 
 Rocks by [] Link:\
-Used for: "enemies" and obstacles to be pushed\
+Used for: "enemies" and obstacles to be pushed
 
 Saw Fish by [] Link:\
-Used for: an enemy that must be dodged to obtain a key\
+Used for: an enemy that must be dodged to obtain a key
 
 Mouse by [] Link:\
-Used for: an enemy that must be dodged to obtain seeds\
+Used for: an enemy that must be dodged to obtain seeds
 
 Keys by [] Link:\
-Used for: must be collected to unlock the door in levels 1 and 2\
+Used for: must be collected to unlock the door in levels 1 and 2
 
 Seeds by [] Link:\
-Used for: must be collected to unlock the door in level 3\
+Used for: must be collected to unlock the door in level 3
 
 Door lvl 1 by [] Link:\
-Used for: first obstacle to teach the player how doors work\
+Used for: first obstacle to teach the player how doors work
 
 Portal by [] Link:\
-Used for: transports player to level 2\
+Used for: transports player to level 2
 
 Door lvl 2 by [] Link:\
-Used for: unlocks path to level 3 (the shop)\
+Used for: unlocks path to level 3 (the shop)
 
 Audio Assets:\
 [Track Title] by [Artist Name] (Link to Sound Source) — Licensed under CC BY 4.0
 ---
-Known Issues
+Known Issues\
 Some of the tile map and art styles need cleaned up to look better.
 ---
 Coursework Submission Links
